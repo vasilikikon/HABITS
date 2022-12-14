@@ -1,4 +1,4 @@
-<?php
+<html><?php
 
 $returnvalue = "";
 echo $_REQUEST('NAMECAT');
@@ -7,7 +7,7 @@ echo $_REQUEST('NAMECAT');
   if ($con->connect_error) {
   die("Connection failed: " . $con->connect_error);
 }
- $sql = "INSERT INTO testtable(CATEGORY_NAME, HABIT_NAME) VALUES ('" . $_REQUEST('NAMECAT') . "," . $_REQUEST('NAMEHABIT') . ";";
+ $sql = "INSERT INTO testtable(CATEGORY_NAME, HABIT_NAME) VALUES ('" . $_REQUEST['NAMECAT'] . "," . $_REQUEST['NAMEHABIT'] . ";";
 if ($con->query($sql) === TRUE) {
   echo "New record created successfully";
 } else {
@@ -17,3 +17,5 @@ if ($con->query($sql) === TRUE) {
 $con->close();
 
  ?>
+
+</html>

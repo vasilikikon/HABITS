@@ -60,12 +60,12 @@ if ($result->num_rows > 0) {
   onclick="document.location.href='newCategoryForm.php'" src="images\ADD.jpg"
   alt="Click here to add a new Task"></input>
 
- <input id="Delete_Category" name="DELETE_CATEGORY" onclick="clickDelete();" type="image" src="images\DELETE.jpg"
+ <input id="Delete_Category" name="DELETE_CATEGORY" type="image" src="images\DELETE.jpg"
   alt="Click here to delete a Task"></input>
 
 
 </body>
 
-<script type="text/javascript" src="habit_maker/functions.js"></script>
+<script type="text/javascript" src="functions.js"></script>
 
 </html>
