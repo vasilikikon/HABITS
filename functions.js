@@ -26,3 +26,10 @@ function test() {
 // function clickDelete() {
 //   console.log("reading the script");
 // }
+
+function pass_same() {
+  var sign = document.getElementById("signPass");
+  var repeat = document.getElementById("repeatPass");
+  if (sign.value == repeat.value) {
+  } else repeat.value = "";
+}
